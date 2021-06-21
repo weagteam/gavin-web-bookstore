@@ -3,6 +3,8 @@ $light-base-color: #cce5ff;
 $white: #ffffff;
 $dark-white: #dadada;
 $black: #000000;
+$light-gray: #9C9C9C;
+$orange: #FB5D5D;
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@500&display=swap");
 
@@ -49,6 +51,31 @@ a {
     color: $black;
     margin: 30px 0;
   }
+}
+
+section{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title{
+  color: $black;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.authors{
+  color: $light-gray;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.price-tag{
+  color: $orange;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .caption {
@@ -141,9 +168,6 @@ header {
 }
 
 .kategori {
-  margin-top: 50px;
-  margin-bottom: 50px;
-
   .card {
     width: 130px;
     height: 141px;
@@ -151,7 +175,7 @@ header {
     background: #cce5ff;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-    border: 1px solid white;
+    border: 1px solid #e7e7e7;
     align-items: center;
     justify-content: center;
     
@@ -168,6 +192,44 @@ header {
         font-size: 12px;
         margin: 0;
         padding-top: 10px;
+      }
+    }
+  }
+}
+
+.popular{
+  .popular-content{
+    .buku{
+      width: 210px;
+      height: 120px;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 30px;
+      img{
+        width: 88px;
+        height: 116px;
+      }
+      .desc{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.testimonial{
+  .testimonial-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .testi-content{
+      flex: 33.3%;
+      max-width: 33.3%;
+      padding: 10px;
+
+      img{
+        width: 62px;
+        height: 62px;
       }
     }
   }

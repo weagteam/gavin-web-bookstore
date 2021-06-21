@@ -43,6 +43,31 @@ a {
   margin: 30px 0;
 }
 
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.authors {
+  color: #9C9C9C;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.price-tag {
+  color: #FB5D5D;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .caption .social-media li {
   width: 15px;
   height: 15px;
@@ -140,11 +165,6 @@ header .navbar-nav .search .logo-search {
   background-size: 20px;
 }
 
-.kategori {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .kategori .card {
   width: 130px;
   height: 141px;
@@ -153,7 +173,7 @@ header .navbar-nav .search .logo-search {
   -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  border: 1px solid white;
+  border: 1px solid #e7e7e7;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -179,5 +199,26 @@ header .navbar-nav .search .logo-search {
   font-size: 12px;
   margin: 0;
   padding-top: 10px;
+}
+
+.popular .popular-content .buku {
+  width: 210px;
+  height: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 30px;
+}
+
+.popular .popular-content .buku img {
+  width: 88px;
+  height: 116px;
+}
+
+.popular .popular-content .buku .desc {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
