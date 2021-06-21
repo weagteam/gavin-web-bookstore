@@ -57,13 +57,13 @@ section {
 }
 
 .authors {
-  color: #9C9C9C;
+  color: #9c9c9c;
   font-size: 12px;
   font-weight: 400;
 }
 
 .price-tag {
-  color: #FB5D5D;
+  color: #fb5d5d;
   font-size: 16px;
   font-weight: 700;
 }
@@ -220,5 +220,56 @@ header .navbar-nav .search .logo-search {
 
 .popular .popular-content .buku .desc {
   margin-left: 10px;
+}
+
+.testimonial .testimonial-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial .testimonial-wrap .testi-content {
+  -webkit-box-flex: 33.3%;
+      -ms-flex: 33.3%;
+          flex: 33.3%;
+  max-width: 33.3%;
+  padding: 15px;
+}
+
+.testimonial .testimonial-wrap .testi-content img {
+  width: 80px;
+  height: 80PX;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonial .testimonial-wrap .testi-content h5,
+.testimonial .testimonial-wrap .testi-content h6, .testimonial .testimonial-wrap .testi-content p {
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.testimonial .testimonial-wrap .testi-content h6 {
+  font-size: 14px;
+  color: #7D7D7D;
+}
+
+footer {
+  background-color: #0b4b86;
+}
+
+footer .footer-atas-kiri {
+  width: 300px;
+}
+
+footer .footer-atas-kiri p {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
