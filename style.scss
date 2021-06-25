@@ -31,17 +31,24 @@ ul {
 }
 
 .l5 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .l4 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 a {
   text-decoration: none;
+}
+
+hr {
+  margin: 0;
+  color: white;
+  border: 0;
+  opacity: .5;
 }
 
 .headings {
@@ -81,13 +88,16 @@ section {
 .caption {
   .social-media {
     li {
-      width: 15px;
-      height: 15px;
+      width: 18px;
+      height: 18px;
       background-color: #0b4b86;
       border-radius: 50%;
 
       a {
         color: $white;
+        i{
+          transform: translateX(25%);
+        }
       }
     }
   }
@@ -113,6 +123,11 @@ header {
 
     .search {
       position: relative;
+
+      [type="search"]:focus ~ a .fa-search,
+      [type="search"]:valid ~ a .fa-search {
+        display: none;
+      }
 
       .form-control::placeholder {
         color: gray;
@@ -148,6 +163,9 @@ header {
         }
       }
     }
+  }
+  .blockquote {
+    margin-top: 20px;
   }
 
   button {
@@ -228,33 +246,67 @@ header {
 
       img {
         width: 80px;
-        height: 80PX;
+        height: 80px;
         border-radius: 50%;
         margin-bottom: 1rem;
         object-fit: cover;
       }
 
       h5,
-      h6, p{
+      h6,
+      p {
         margin-bottom: 5px;
         color: $black;
       }
 
-      h6{
+      h6 {
         font-size: 14px;
-        color: #7D7D7D;
+        color: #7d7d7d;
       }
     }
   }
 }
 
-// footer 
-footer{
+// footer
+.footer {
   background-color: $base-color;
-  .footer-atas-kiri{
-    width: 300px;
+  color: $white;
+  .footer-atas{
+    .footer-atas-kiri {
+      padding: 32px;
+      width: 360px;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .footer-atas-kanan{
+      color: $white;
+      padding: 32px;
+      p{
+        font-size: 24px;
+      }
+      .social-media {
+        li {
+          width: 32px;
+          height: 32px;
+          background-color: $white;
+          border-radius: 50%;
+          a {
+            color: $base-color;
+            font-size: 22px;
+            i{
+              transform: translateX(40%);
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-bawah{
+    padding: 10px;
     p{
-      color: #ffffff;
+      margin: 0;
+      padding: 8px auto 18px;
     }
   }
 }
