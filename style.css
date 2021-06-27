@@ -43,7 +43,7 @@ hr {
   opacity: .5;
 }
 
-.headings h1 {
+h1 {
   font-size: 28px;
   font-weight: 500;
   color: #000000;
@@ -145,17 +145,19 @@ header .navbar-nav .search .logo-search {
 }
 
 .hero-slide {
-  width: 70%;
   margin: 50px auto;
 }
 
 .hero-slide .carousel {
-  border-radius: 20px;
   overflow: hidden;
 }
 
+.hero-slide .carousel .carousel-inner {
+  border-radius: 20px;
+}
+
 .hero-slide .carousel .carousel-inner .carousel-item {
-  width: 930px;
+  width: 100%;
   height: 420px;
 }
 
@@ -222,7 +224,11 @@ header .navbar-nav .search .logo-search {
   padding-top: 10px;
 }
 
-.popular .popular-content .buku {
+.popular p, .recomended p {
+  color: #fb5d5d;
+}
+
+.popular .popular-content .buku, .popular .recomended-content .buku, .recomended .popular-content .buku, .recomended .recomended-content .buku {
   width: 210px;
   height: 120px;
   -webkit-box-align: center;
@@ -234,12 +240,12 @@ header .navbar-nav .search .logo-search {
   margin: 20px 30px;
 }
 
-.popular .popular-content .buku img {
+.popular .popular-content .buku img, .popular .recomended-content .buku img, .recomended .popular-content .buku img, .recomended .recomended-content .buku img {
   width: 88px;
   height: 116px;
 }
 
-.popular .popular-content .buku .desc {
+.popular .popular-content .buku .desc, .popular .recomended-content .buku .desc, .recomended .popular-content .buku .desc, .recomended .recomended-content .buku .desc {
   margin-left: 10px;
 }
 
@@ -281,6 +287,39 @@ header .navbar-nav .search .logo-search {
 .testimonial .testimonial-wrap .testi-content h6 {
   font-size: 14px;
   color: #7d7d7d;
+}
+
+.detail-book .container .img-book {
+  width: calc(30% + 20px);
+  max-width: calc(30% + 20px);
+}
+
+.detail-book .container .img-book img:only-of-type {
+  border-radius: 3px;
+  margin-left: 10px;
+  width: 288px;
+  height: 409px;
+}
+
+.detail-book .container .img-book .img-book-micro img {
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 69px;
+  height: 109px;
+}
+
+.detail-book .container .about {
+  width: calc(70% + 20px);
+  max-width: calc(70% + 20px);
+  color: #000000;
+}
+
+.detail-book .container .about h1.title-books {
+  font-weight: 700;
+}
+
+.detail-book .container .about p.desc-book {
+  max-width: 550px;
 }
 
 .footer {
