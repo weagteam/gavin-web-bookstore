@@ -224,7 +224,11 @@ header .navbar-nav .search .logo-search {
   padding-top: 10px;
 }
 
-.popular .popular-content .buku {
+.popular p, .recomended p {
+  color: #fb5d5d;
+}
+
+.popular .popular-content .buku, .popular .recomended-content .buku, .recomended .popular-content .buku, .recomended .recomended-content .buku {
   width: 210px;
   height: 120px;
   -webkit-box-align: center;
@@ -236,12 +240,12 @@ header .navbar-nav .search .logo-search {
   margin: 20px 30px;
 }
 
-.popular .popular-content .buku img {
+.popular .popular-content .buku img, .popular .recomended-content .buku img, .recomended .popular-content .buku img, .recomended .recomended-content .buku img {
   width: 88px;
   height: 116px;
 }
 
-.popular .popular-content .buku .desc {
+.popular .popular-content .buku .desc, .popular .recomended-content .buku .desc, .recomended .popular-content .buku .desc, .recomended .recomended-content .buku .desc {
   margin-left: 10px;
 }
 
@@ -307,6 +311,15 @@ header .navbar-nav .search .logo-search {
 .detail-book .container .about {
   width: calc(70% + 20px);
   max-width: calc(70% + 20px);
+  color: #000000;
+}
+
+.detail-book .container .about h1.title-books {
+  font-weight: 700;
+}
+
+.detail-book .container .about p.desc-book {
+  max-width: 550px;
 }
 
 .footer {

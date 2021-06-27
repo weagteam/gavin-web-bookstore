@@ -216,8 +216,11 @@ header {
   }
 }
 
-.popular {
-  .popular-content {
+.popular, .recomended {
+  p{
+    color: $orange;
+  }
+  .popular-content, .recomended-content {
     .buku {
       width: 210px;
       height: 120px;
@@ -293,6 +296,13 @@ header {
     .about{
       width: calc(70% + 20px);
       max-width: calc(70% + 20px);
+      color: $black;
+      h1.title-books{
+        font-weight: 700;
+      }
+      p.desc-book{
+        max-width: 550px;
+      }
     }
   }
 }
