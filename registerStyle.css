@@ -1,0 +1,139 @@
+
+
+/* css halaman register */
+
+body {
+    font-family: 'lato', sans-serif;
+    color: rgba(0,0,0,0.7);
+  }
+      
+a {
+    text-decoration: none;
+  }
+  .daftar-now p {
+    font-size: 15px;
+  }
+  .form-daftar input {
+    width: 360px;
+    height: 50px;
+    border-color: #0B4B86;
+  }
+  .option-daftar-item {
+    border: 1px solid #878787;
+    width: 360px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-top: 13px;
+    padding-left: 25px;
+  }
+  .option-daftar-item a{
+    margin-left: 25px;
+    font-size: 16px;
+  }
+  small{
+    font-size: 14px;
+  }
+  
+  .btn-daftar {
+    background-color: #3a78b3;
+    width: 340px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #0b4b86;
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+  
+  
+  /* DEKSTOP */
+  @media (min-width: 992px) { 
+    /* .register {
+       width: 80%;
+       height: 80%;
+    } */
+    .daftar-now {
+      margin-left: 9%;
+    }
+    .form-daftar {
+      position: relative;
+      margin-left: -14%;
+    }
+    .form-daftar::after {
+      content: "";
+      height: 84%;
+      border-left: 1px solid #C8C8C8;
+      float: right;
+      position: absolute;
+      margin-top: -68%;
+      left: 110%;
+      padding-top: 20%;
+    }
+    .form-daftar-item {
+      margin-top: 15px;
+    }
+    .form-daftar input {
+      height: 50px;
+      width: 100%;
+    }
+    .option-daftar{
+      padding-left: 8%;
+      position: relative;
+    }
+    .option-daftar::before {
+      content:"atau";
+      position: absolute;
+      background-color: white;
+      margin-top: 35%;
+      margin-left: -17%;
+      font-size: 14px;
+    }
+    .option-daftar-item {
+      margin-top: 15px;
+      height: 50px;
+      width: 125%;
+    }
+    .btn-daftar {
+      width: 95%;
+      position: relative;
+    }
+   }
+  
+   /* phone or tablet*/
+   @media (max-width: 991.98px) { 
+    .navbar-brand {
+      padding-left: 32%;
+    }
+    .daftar-now {
+        text-align: center;
+    }
+    .daftar-now h4 {
+      font-size: 24px;
+    }
+    .btn-daftar {
+        margin-bottom: 15%;
+    }
+     .btn-daftar::after {
+       content: "";
+       width: 350px;
+       height: 20px;
+       border-top: 1px solid #707070;
+       position: absolute;
+       margin-top: 53px;
+       margin-left: -200px;
+     }
+     
+     .option-daftar::before {
+       content :"atau daftar dengan";
+       padding : 10px;
+       background-color: white;
+       position: absolute;
+       margin-top: -55px;
+       margin-left: 100px;
+     }
+     .option-daftar-item .center{
+         margin-left: 12% ;
+     }
+    }
+  
+  
