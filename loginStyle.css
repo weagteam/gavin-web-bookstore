@@ -1,0 +1,145 @@
+
+    
+  /* css halaman login */
+    
+    body {
+        font-family: 'lato', sans-serif;
+        color: rgba(0,0,0,0.7);
+    }
+      
+    a {
+        text-decoration: none;
+    }
+    
+  .form-masuk input {
+    width: 360px;
+    height: 50px;
+    border-color: #0B4B86;
+  }
+ 
+  .option-masuk-item {
+    border: 1px solid #878787;
+    width: 360px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-top: 13px;
+    padding-left: 25px;
+  }
+  .option-masuk-item a{
+    margin-left: 25px;
+    font-size: 16px;
+  }
+  small{
+    font-size: 14px;
+  }
+  
+  .btn-masuk {
+    background-color: #3a78b3;
+    width: 340px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #0b4b86;
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+  .tanya-center {
+      margin-left: 80px;
+      font-size: 16px;
+  }
+    
+  /* DEKSTOP */
+  @media (min-width: 992px) { 
+   
+    .masuk-now {
+      margin-left: 9%;
+    }
+    .form-masuk {
+      position: relative;
+      margin-left: -14%;
+    }
+    .form-masuk::after {
+      content: "";
+      height: 93%;
+      border-left: 1px solid #C8C8C8;
+      float: right;
+      position: absolute;
+      margin-top: -60%;
+      left: 110%;
+    }
+    .form-masuk-item {
+      margin-top: 15px;
+    }
+    .form-masuk input {
+      height: 50px;
+      width: 100%;
+    }
+    .option-masuk{
+      padding-left: 8%;
+      position: relative;
+    }
+    .option-masuk::before {
+      content:"atau";
+      position: absolute;
+      background-color: white;
+      margin-top: 30%;
+      margin-left: -17%;
+      font-size: 14px;
+    }
+    .option-masuk-item {
+      margin-top: 15px;
+      height: 50px;
+      width: 125%;
+    }
+    .btn-masuk {
+      width: 95%;
+      position: relative;
+    }
+   }
+  
+
+   
+   /* phone or tablet*/
+   @media (max-width: 991.98px) { 
+    .navbar-brand {
+      padding-left: 32%;
+    }
+    .masuk-now {
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .masuk-now h4 {
+      font-size: 24px;
+    }
+    .btn-masuk {
+        margin-bottom: 3%;
+    }
+     .btn-masuk::after {
+       content: "";
+       width: 350px;
+       height: 20px;
+       border-top: 1px solid #707070;
+       position: absolute;
+       margin-top: 100px;
+       margin-left: -200px;
+     }
+     .tanya-center {
+         margin-left: 90px;
+     }
+     .option-masuk::before {
+       content :"atau masuk dengan";
+       padding : 10px;
+       background-color: white;
+       position: absolute;
+       margin-top: -55px;
+       margin-left: 100px;
+     }
+     .option-masuk {
+         margin-top: 60px;
+     }
+     .option-masuk-item .center{
+         margin-left: 12% ;
+     }
+    }
+  
